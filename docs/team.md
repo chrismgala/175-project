@@ -5,12 +5,11 @@ title:  Team
 
 # {{ page.title }}
 
-
-## USER 1
-***UCI Net ID***: galac
-
-## USER 2
+## Brendon Wai
 ***UCI Net ID***: bwai
 
-## USER 3
+## Sasikanth Kavuri
 ***UCI Net ID***: skavuri
+
+## Chris Gala
+***UCI Net ID***: galac
