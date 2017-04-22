@@ -11,6 +11,6 @@ Deep learning for images is the main algorithm that will be used.
 
 ## Evaluation Plan
 ### Quantitative Evaluation
-
+Metrics include the ability to recognize the object from multiple angles and with other objects in the view, near it or even partially covering it. For example, could the object be recognized in sunny weather and rainy / snowy weather? Our baseline is being able to recognize the object in straight point-of-view, with nothing else on the screen. We expect our approach to improve the metric by at least 80%. We will evaluate our data based on a collection of Minecraft images and screenshots. This data will be collected by us through various resources including Google Images and our own generated worlds in Minecraft.
 
 ### Qualitative Evaluation
