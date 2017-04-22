@@ -3,6 +3,10 @@ layout: default
 title:  Proposal
 ---
 
+## Appointment with Professor Singh
+Date: April 27, 2017
+Time: 2:00pm
+
 ## Summary of the Project
 We are planning to use Computer Vision to construct a plugin that will take in objects from the Minecraft screen, and mark out those objects with labels on screen. The applications of this include autonomous vehicles (cars, drones, planes, boats, etc.), which must know what objects it sees and recognize which of those it must avoid while moving.
 
