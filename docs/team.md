@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Team Alpha Minecraft
+title:  Team
 ---
 
 # {{ page.title }}
