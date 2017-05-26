@@ -1,5 +1,5 @@
-# TODO use multiple templates
-# TODO integrate with Malmo
+# TODO build malmo obstacle
+# TODO have multiple items, agent walk through, capture screenshot at right times
 # TODO create variety of environments for template matching
 
 import sys
@@ -8,36 +8,63 @@ sys.path.append('/usr/local/lib/python2.7/site-packages')
 import numpy as np
 import cv2
 
-image = cv2.imread('apple.png')
+max_accuracy = 0
+max_accuracy_idx = 0
 templates = []
-templates.append(cv2.imread('arrow template.png'))
-templates.append(cv2.imread('apple template.png'))
+results = {}
 
-for template in templates:
-    # resize images
-    image = cv2.resize(image, (0,0), fx=0.5, fy=0.5)
+image = cv2.imread('./data/train/apple.png')
+image = cv2.resize(image, (0,0), fx=0.5, fy=0.5)
+imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+templates.append(cv2.imread('./data/templates/apple.png'))
+templates.append(cv2.imread('./data/templates/arrow.png'))
+templates.append(cv2.imread('./data/templates/bed.png'))
+templates.append(cv2.imread('./data/templates/beef.png'))
+templates.append(cv2.imread('./data/templates/bowl.png'))
+templates.append(cv2.imread('./data/templates/bread.png'))
+templates.append(cv2.imread('./data/templates/book.png'))
+templates.append(cv2.imread('./data/templates/bone.png'))
+templates.append(cv2.imread('./data/templates/fish.png'))
+templates.append(cv2.imread('./data/templates/melon.png'))
+templates.append(cv2.imread('./data/templates/potion.png'))
+templates.append(cv2.imread('./data/templates/wooden_sword.png'))
+
+for t in range(len(templates)):
+    template = templates[t]
+
+    # Resize template
     template = cv2.resize(template, (0,0), fx=0.5, fy=0.5)
 
     # Convert to grayscale
-    imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     templateGray = cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
 
     # Find template
-    result = cv2.matchTemplate(imageGray,templateGray, cv2.TM_CCOEFF_NORMED)
+    result = cv2.matchTemplate(imageGray, templateGray, cv2.TM_CCOEFF_NORMED)
     min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
-    top_left = max_loc
-    h,w = templateGray.shape
-    bottom_right = (top_left[0] + w, top_left[1] + h)
-    cv2.rectangle(image,top_left, bottom_right,(0,0,255),4)
 
-    # Get accuracy
-    print max_val
+    results[t] = {}
+    results[t]['min_val'] = min_val
+    results[t]['max_val'] = max_val
+    results[t]['min_loc'] = min_loc
+    results[t]['max_loc'] = max_loc
+    results[t]['templateGray'] = templateGray
+
+for k, v in results.items():
+    if results[k]['max_val'] > max_accuracy:
+        max_accuracy = results[k]['max_val']
+        max_accuracy_idx = k
+
+print max_accuracy, max_accuracy_idx
+
+top_left = results[max_accuracy_idx]['max_loc']
+h, w = results[max_accuracy_idx]['templateGray'].shape
+bottom_right = (top_left[0] + w, top_left[1] + h)
+cv2.rectangle(image, top_left, bottom_right,(0,0,255),4)
 
 # Show result
-cv2.imshow("Template", template)
 cv2.imshow("Result", image)
 
-cv2.moveWindow("Template", 10, 50);
 cv2.moveWindow("Result", 150, 50);
 
-cv2.waitKey(0)
+cv2.waitKey(5000)
