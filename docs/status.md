@@ -89,7 +89,7 @@ For our quantitative evaluation, we used TensorFlow's built in mathematical calc
 This is only using one Minecraft item. So for our final iteration, we would like to test it on many more of Minecraft's 188 built-in items. We would also add more classes so it wouldn't be a simple either-or prediction.
 
 Further information and visualization of the softmax equation used in TensorFlow
-(taken from [Project Malmo](https://www.tensorflow.org/get_started/mnist/beginners#softmax_regressions)):
+(taken from [TensorFlow Documentation](https://www.tensorflow.org/get_started/mnist/beginners#softmax_regressions)):
 
 <img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/evaluation/equation1.png" width="600" height="400"/>
 
