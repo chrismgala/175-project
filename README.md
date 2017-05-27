@@ -33,7 +33,10 @@ In real life this could be expanded to helping people understand what recipes th
 2. python status_tutorial.py
 
 # Video Summary 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/d5n6dN1qB6s" frameborder="0" allowfullscreen></iframe>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=d5n6dN1qB6s
+" target="_blank"><img src="http://img.youtube.com/vi/d5n6dN1qB6s/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 
 # Future Improvements
 1. Better data collection with more items and enlarged training data set for each item.
