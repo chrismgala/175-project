@@ -1,3 +1,9 @@
+Embedding wasn't possible so click on the image below to see the gameplay of our agent. 
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=d5n6dN1qB6s
+" target="_blank"><img src="http://img.youtube.com/vi/d5n6dN1qB6s/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 ---
 layout: default
 title:  Status
