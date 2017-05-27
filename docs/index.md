@@ -36,34 +36,25 @@ Chris Gala
 ### Step 1 - Gather Data
 
 #### Train Images
-![Image of Minecraft Apple]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/brick.png)
+![Image of Minecraft Apple](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/brick.png)
 
-![Image of Minecraft Compass]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/compass.png)
+![Image of Minecraft Compass](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/compass.png)
 
-![Image of Minecraft Paper]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/paper.png)
+![Image of Minecraft Paper](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/paper.png)
 
 #### Patches / Templates
-![Image of Minecraft Cake]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/templates/cake.png)
+![Image of Minecraft Cake](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/templates/cake.png)
 
-![Image of Minecraft Clock]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/templates/clock.png)
+![Image of Minecraft Clock](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/templates/clock.png)
 
-![Image of Minecraft Fish]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/templates/fish.png)
+![Image of Minecraft Fish](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/templates/fish.png)
 
 #### Test Images
-![Image of Minecraft Apple]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple1.png)
+![Image of Minecraft Apple](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple1.png)
 
-![Image of Minecraft Apple1]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple2.png)
+![Image of Minecraft Apple1](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple2.png)
 
-![Image of Minecraft Apple2]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple3.png)
+![Image of Minecraft Apple2](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple3.png)
 
 
 ### Step 2 - Train Classifier

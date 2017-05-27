@@ -47,43 +47,37 @@ The script will proceed to generate bottleneck files, as mentioned above, and be
 apples (score = 0.99035)
 coal (score = 0.00965)
 
-![Image of Minecraft Apple1]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple1.png)
+![Image of Minecraft Apple1](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple1.png)
 
 #### Results
 apples (score = 0.97061)
 coal (score = 0.02939)
 
-![Image of Minecraft Apple4]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple4.png)
+![Image of Minecraft Apple4](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple4.png)
 
 #### Results
 apples (score = 0.97860)
 coal (score = 0.02140)
 
-![Image of Minecraft Apple6]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple6.png)
+![Image of Minecraft Apple6](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple6.png)
 
 #### Results
 apples (score = 0.80647)
 coal (score = 0.19353)
 
-![Image of Minecraft Apple16]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple16.png)
+![Image of Minecraft Apple16](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple16.png)
 
 #### Results
 apples (score = 0.95400)
 coal (score = 0.04600)
 
-![Image of Minecraft Apple17]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple17.png)
+![Image of Minecraft Apple17](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple17.png)
 
 #### Results
 apples (score = 0.99896)
 coal (score = 0.00104)
 
-![Image of Minecraft Apple19]
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple19.png)
+![Image of Minecraft Apple19](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple19.png)
 
 #### Results
 apples (score = 0.98701)
