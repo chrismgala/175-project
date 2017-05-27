@@ -6,12 +6,17 @@ In real life this could be expanded to helping people understand what recipes th
 1. From your home directory, clone the repository and enter it.
 
 2. Download Malmo
-    Go to your cloned directory in terminal
-    Get the latest version of malmo for your system from - https://github.com/Microsoft/malmo/releases
+    Go to your cloned directory in terminal and get the latest version of malmo for your system from - 
+    https://github.com/Microsoft/malmo/releases
+      
       e.g. for mac malmo 0.21 --> wget https://github.com/Microsoft/malmo/releases/download/0.21.0/Malmo-0.21.0-Mac-64bit.zip
+      
     unzip Malmo-*
+    
     rm Malmo-*.zip
+    
     mv Malmo-* MalmoTF
+    
     cd ./MalmoTF
     
 3. Create a virtual env.
