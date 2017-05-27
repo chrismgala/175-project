@@ -36,7 +36,7 @@ Chris Gala
 ### Step 1 - Gather Data
 
 #### Train Images
-![Image of Minecraft Apple](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/brick.png)
+![Image of Minecraft Bed](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/bed.png =250x250)
 
 ![Image of Minecraft Compass](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/compass.png)
 
