@@ -9,13 +9,10 @@ A Computer Vision project in Minecraft using the Project Malmo API and TensorFlo
 
 ## Summary
 External APIs:
-https://github.com/Microsoft/malmo - automatic!
 [Project Malmo](https://github.com/Microsoft/malmo) as our playground
 
-https://www.tensorflow.org - automatic!
 [TensorFlow](https://www.tensorflow.org) as our Computer Vision API for training a classifier
 
-https://github.com/chrismgala/Classyfy - automatic!
 [Classyfy](https://github.com/chrismgala/Classyfy) as our repository for our source code
 
 

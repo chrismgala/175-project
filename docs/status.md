@@ -88,6 +88,15 @@ For our quantitative evaluation, we used TensorFlow's built in mathematical calc
 
 This is only using one Minecraft item. So for our final iteration, we would like to test it on many more of Minecraft's 188 built-in items. We would also add more classes so it wouldn't be a simple either-or prediction.
 
+Further information and visualization of the softmax equation used in TensorFlow
+(taken from [Project Malmo](https://www.tensorflow.org/get_started/mnist/beginners#softmax_regressions)):
+
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/evaluation/equation1.png" width="1000" height="700"/>
+
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/evaluation/equation2.png" width="1000" height="700"/>
+
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/evaluation/equation3.png" width="1000" height="700"/>
+
 ### Qualitative Evaluation
 For our qualitative evaluation, we wanted to make sure that we had generated a diverse set of environments for the objects we wanted to recognize. For example, in the 7 images above, we have an Apple shown in rainy, snowy, and clear weather. We also have multiple different backgrounds, including grass, trees, flowers, mushrooms, forests, and boxes. In the clear weather environments, the screen is much brighter as opposed to the screen in rainy or snowy weather. These variations helped us qualitatively evaluate our project. For each of the variations above, our classifier was able to confidently predict the correct class, 'apples'. For future iterations, we would like to add more angles, as we only tested on straight point-of-view angles in the above images.
 
