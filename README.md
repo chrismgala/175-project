@@ -42,14 +42,7 @@ In real life this could be expanded to helping people understand what recipes th
 6. Train the classifier
     Switch into ~/Classyfy/MalmoTF/Python_Examples/tf_files/
 
-    python retrain.py \\
-  --bottleneck_dir=bottlenecks \\
-  --how_many_training_steps=500 \\
-  --model_dir=inception \\
-  --summaries_dir=training_summaries/basic \\
-  --output_graph=retrained_graph.pb \\
-  --output_labels=retrained_labels.txt \\
-  --image_dir=minecraft_photos
+    python retrain.py --bottleneck_dir=bottlenecks --how_many_training_steps=500 --model_dir=inception --summaries_dir=training_summaries/basic --output_graph=retrained_graph.pb --output_labels=retrained_labels.txt --image_dir=minecraft_photos
     
 
 # Running our mission
