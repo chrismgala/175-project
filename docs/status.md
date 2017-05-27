@@ -14,3 +14,23 @@ Inception v3, as a neural network model, is made up of layers of nodes stacked o
 ```
 https://raw.githubusercontent.com/tensorflow/tensorflow/r1.1/tensorflow/examples/image_retraining/retrain.py
 ```
+
+With the trainer in hand, we began our data collection process. For each object we wanted to train, we generate the same object in different worlds that guarantee overall different lighting and visibility on the object to diversify training data. We use a simple command
+
+```Python
+call(["screencapture", "./images/" + "apple" + str(i) + ".png"])
+```
+
+to capture a screenshot every second. With this method, we generated roughly 40 images for each object. 
+We started the actual training process by running the retrain.py script as follows
+
+```Python
+python retrain.py \
+  --bottleneck_dir=bottlenecks \
+  --how_many_training_steps=500 \
+  --model_dir=inception \
+  --summaries_dir=training_summaries/basic \
+  --output_graph=retrained_graph.pb \
+  --output_labels=retrained_labels.txt \
+  --image_dir=minecraft_photos
+```
