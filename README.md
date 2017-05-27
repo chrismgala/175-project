@@ -3,34 +3,56 @@ This is our implementation of minecraft item image classification. We believe th
 In real life this could be expanded to helping people understand what recipes they can make with the items they have. 
 
 # Installation Steps
-1. Download Malmo
-    Go to your home directory in terminal (cd)
+1. From your home directory, clone the repository and enter it.
+
+2. Download Malmo
+    Go to your cloned directory in terminal
     Get the latest version of malmo for your system from - https://github.com/Microsoft/malmo/releases
       e.g. for mac malmo 0.21 --> wget https://github.com/Microsoft/malmo/releases/download/0.21.0/Malmo-0.21.0-Mac-64bit.zip
     unzip Malmo-*
-    cd ~/Malmo
-2. Create a virtual env.
+    rm Malmo-*.zip
+    mv Malmo-* MalmoTF
+    cd ./MalmoTF
+    
+3. Create a virtual env.
     virtualenv -p /usr/bin/python2.7 malmo
+    
 3. Activate your virtual env.  
     source malmo/bin/activate
+    
 4. Get tensorflow inside your env.
     pip install --upgrade tensorflow   --> More info and error resolution can be found here https://www.tensorflow.org/install/
-5. Train the classifier
-    Switch into ~/malmo/Python_Examples/tf_files/
+      *NOTE pip doesn't have tensorflow package at time of write so do 
+      pip install --upgrade  https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.1.0-py2-none-any.whl 
+      with the respective .whl file
 
-    python retrain.py \
-  --bottleneck_dir=bottlenecks \
-  --how_many_training_steps=500 \
-  --model_dir=inception \
-  --summaries_dir=training_summaries/basic \
-  --output_graph=retrained_graph.pb \
-  --output_labels=retrained_labels.txt \
+5. Get other dependencies
+    pip install Pillow
+
+6. Move git files to the right place in your environment.
+    Go up to the top level of your git directory. Your path should end in Classyfy/
+    mv status_tutorial.py MalmoTF/Python_Examples/
+    mv tf_files/ MalmoTF/Python_Examples/
+ 
+6. Train the classifier
+    Switch into ~/Classyfy/MalmoTF/Python_Examples/tf_files/
+
+    python retrain.py \\
+  --bottleneck_dir=bottlenecks \\
+  --how_many_training_steps=500 \\
+  --model_dir=inception \\
+  --summaries_dir=training_summaries/basic \\
+  --output_graph=retrained_graph.pb \\
+  --output_labels=retrained_labels.txt \\
   --image_dir=minecraft_photos
     
 
 # Running our mission
-1. cd ~/malmo/Python_Examples/
-2. python status_tutorial.py
+1. cd ~/Classyfy/MalmoTF/Minecraft
+2. ./launchClient.sh
+3. Open a new terminal tab.
+4. cd ~/Classyfy/MalmoTF/Python_Examples/
+5. python status_tutorial.py
 
 # Video Summary 
 Embedding wasn't possible so click on the image below to see the gameplay of our agent. 
