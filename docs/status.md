@@ -41,7 +41,7 @@ The script will proceed to generate bottleneck files, as mentioned above, and be
 
 ## Evaluation
 
-<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple.png" width="1000" height="700"/>
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple0.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.99035)
