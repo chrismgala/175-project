@@ -36,28 +36,28 @@ Chris Gala
 ### Step 1 - Gather Data
 
 #### Train Images
-<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/bed.png" width="250" height="250"/>
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/bed.png" width="1000" height="700"/>
 
-![Image of Minecraft Compass](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/compass.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/compass.png" width="1000" height="700"/>
 
-![Image of Minecraft Paper](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/paper.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/paper.png" width="1000" height="700"/>
 
 #### Patches / Templates
-![Image of Minecraft Cake](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/templates/cake.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/cake.png" width="1000" height="700"/>
 
-![Image of Minecraft Clock](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/templates/clock.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/clock.png" width="1000" height="700"/>
 
-![Image of Minecraft Fish](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/templates/fish.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/train/fish.png" width="1000" height="700"/>
 
 #### Test Images
-![Image of Minecraft Apple](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple1.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple1.png" width="1000" height="700"/>
 
-![Image of Minecraft Apple1](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple2.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple2.png" width="1000" height="700"/>
 
-![Image of Minecraft Apple2](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple3.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple3.png" width="1000" height="700"/>
 
 
 ### Step 2 - Train Classifier
 
 
-### Step 3 - Detect Images
+### Step 3 - Classify Images

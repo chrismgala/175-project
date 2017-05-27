@@ -41,43 +41,43 @@ The script will proceed to generate bottleneck files, as mentioned above, and be
 
 ## Evaluation
 
-![Image of Minecraft Apple](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple0.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.99035)
 coal (score = 0.00965)
 
-![Image of Minecraft Apple1](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple1.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple1.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.97061)
 coal (score = 0.02939)
 
-![Image of Minecraft Apple4](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple4.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple4.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.97860)
 coal (score = 0.02140)
 
-![Image of Minecraft Apple6](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple6.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple6.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.80647)
 coal (score = 0.19353)
 
-![Image of Minecraft Apple16](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple16.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple16.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.95400)
 coal (score = 0.04600)
 
-![Image of Minecraft Apple17](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple17.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple7.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.99896)
 coal (score = 0.00104)
 
-![Image of Minecraft Apple19](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple19.png)
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple19.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.98701)
