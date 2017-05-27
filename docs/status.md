@@ -24,7 +24,7 @@ call(["screencapture", "./images/" + "apple" + str(i) + ".png"])
 to capture a screenshot every second. With this method, we generated roughly 40 images for each object. 
 We started the actual training process by running the retrain.py script as follows
 
-```Python
+```
 python retrain.py \
   --bottleneck_dir=bottlenecks \
   --how_many_training_steps=500 \
@@ -34,3 +34,5 @@ python retrain.py \
   --output_labels=retrained_labels.txt \
   --image_dir=minecraft_photos
 ```
+
+The script will proceed to generate bottleneck files, as mentioned above, and begin the training of the final layer. To do so, the trainer runs repeated steps, each randomly chooses 10 images from the training set and retrieve the respective bottlenecks to form a prediction on the final layer. The results will be compared against the true labels of the images. The differences used to update the weight values of the final layer using stochastic gradient descent. Note that we limited the amount of training steps to 500 while a general image classification training on this model will usually run 4000 steps.
