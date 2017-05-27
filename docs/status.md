@@ -41,9 +41,7 @@ The script will proceed to generate bottleneck files, as mentioned above, and be
 
 ## Evaluation
 
-![Image of Minecraft Apple]
-<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple0.png" class="img-responsive" alt="">
-(https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple0.png)
+![Image of Minecraft Apple](https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple0.png)
 
 #### Results
 apples (score = 0.99035)
