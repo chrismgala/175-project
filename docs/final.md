@@ -50,26 +50,26 @@ The script will proceed to generate bottleneck files, as mentioned above, and be
 <img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/wheat_eval.png" width="1000" height="700"/>
 
 #### Results
-apples (score = 0.99035)
-coal (score = 0.00965)
+iron shovel (score = 0.9021)
+wheat (score = 0.885)
 
 <img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/bow_eval.png" width="1000" height="700"/>
 
 #### Results
-apples (score = 0.97061)
-coal (score = 0.02939)
+bow (score = 0.8214)
+wooden axe (score = 0.683)
 
 <img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/iron_shovel_eval.png" width="1000" height="700"/>
 
 #### Results
-apples (score = 0.97860)
-coal (score = 0.02140)
+iron shovel (score = 0.842)
+wheat (score = 0.634)
 
 <img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/wooden_axe_eval.png" width="1000" height="700"/>
 
 #### Results
-apples (score = 0.80647)
-coal (score = 0.19353)
+iron shovel (score = 0.7784)
+wooden axe (score = 0.7762)
 
 
 ### Quantitative Evaluation
