@@ -1,4 +1,7 @@
- ---layout: defaulttitle:  Final Report---
+ ---
+layout: default
+title:  Final Report
+---
 
 ## Video
 [![placeholder](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)]
@@ -44,47 +47,30 @@ The script will proceed to generate bottleneck files, as mentioned above, and be
 
 ## Evaluation
 
-<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple0.png" width="1000" height="700"/>
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/wheat_eval.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.99035)
 coal (score = 0.00965)
 
-<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple1.png" width="1000" height="700"/>
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/bow_eval.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.97061)
 coal (score = 0.02939)
 
-<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple4.png" width="1000" height="700"/>
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/iron_shovel_eval.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.97860)
 coal (score = 0.02140)
 
-<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple6.png" width="1000" height="700"/>
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/wooden_axe_eval.png" width="1000" height="700"/>
 
 #### Results
 apples (score = 0.80647)
 coal (score = 0.19353)
 
-<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple16.png" width="1000" height="700"/>
-
-#### Results
-apples (score = 0.95400)
-coal (score = 0.04600)
-
-<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple7.png" width="1000" height="700"/>
-
-#### Results
-apples (score = 0.99896)
-coal (score = 0.00104)
-
-<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/apple19.png" width="1000" height="700"/>
-
-#### Results
-apples (score = 0.98701)
-coal (score = 0.01299)
 
 ### Quantitative Evaluation
 For our quantitative evaluation, we used TensorFlow's built in mathematical calculations to produce a confidence indicating whether or not the classification was successful for each image. For example, in the 7 images above, we have output below each image for the two different classes we trained our classifier on, 'apples' and 'coal'. For those two classes, we have results from TensorFlow's calculations which uses functions like the softmax function used in neural networks. This function is used in the final layer of a neural net classifier and computes probabilities which allow a confidence to be returned, leading to the classification of the object in the images above as 'apples' since the confidence returned in each run is above 0.80. All seven of the images above passed as each run resulted in the 'apples' classification which is 100% accuracy.  However, this was on images very similar to our training data. In some other scenarios, our classifier doesn't give a clear confidence reading on which item was in the image. As a result, we look forward to increasing our training data set from a mere 20 per item to 100 per item and increase the number of items.  We hope to achieve better accuracy this way. Over several different runs of real time gameplay our agent had an accuracy of approximately 70% - 75%.
