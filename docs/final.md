@@ -66,6 +66,28 @@ The script will proceed to generate bottleneck files, as mentioned above, and be
 
 ## Evaluation
 
+### Training Evaluation
+
+As a step up from our last status report, we increased our class count to 10. We achieved 74% overall training accuracy from tensorflow, which was lowered than the 86% we achieved when training on just 2 objects - something to be expected since we aren't able to gather the a sufficiently large amount of data for each object class. We can see from the graph that our model reaches maximum performance starting at 350 steps, and at around 500 steps the models starts overfitting as the validation accuracy (as shown by the blue line) starts dropping.
+
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/evaluation/accuracy2.png" width="1000" height="700"/>
+
+The cross entropy value is another indicator of the performance of our model. As we increase the training steps, we are able to reduce entropy within the classified groups.
+
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/evaluation/cross_entropy.png" width="1000" height="700"/>
+
+Another interesting point to note is the change in the biase values during training. In the graph below, we can see that biase converges to several groups of values, signifying several features picked out by our model for classification.
+
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/evaluation/biases_hist.png" width="1000" height="700"/>
+
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/evaluation/biase.png" width="1000" height="700"/>
+
+Here is a visualization of the fluctuation of feature parameters as the model is training through gradient descent.
+
+<img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/evaluation/weights.png" width="1000" height="700"/>
+
+### In-game evaluation
+
 <img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/wheat_eval.png" width="1000" height="700"/>
 
 #### Results  
