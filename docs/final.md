@@ -67,27 +67,27 @@ The script will proceed to generate bottleneck files, as mentioned above, and be
 
 <img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/wheat_eval.png" width="1000" height="700"/>
 
-#### Results
-iron shovel (score = 0.9021)
-wheat (score = 0.885)
+#### Results  
+iron shovel (score = 0.9021)  
+wheat (score = 0.885)  
 
 <img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/bow_eval.png" width="1000" height="700"/>
 
-#### Results
-bow (score = 0.8214)
-wooden axe (score = 0.683)
+#### Results  
+bow (score = 0.8214)  
+wooden axe (score = 0.683)  
 
 <img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/iron_shovel_eval.png" width="1000" height="700"/>
 
-#### Results
-iron shovel (score = 0.842)
-wheat (score = 0.634)
+#### Results  
+iron shovel (score = 0.842)  
+wheat (score = 0.634)  
 
 <img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/test/wooden_axe_eval.png" width="1000" height="700"/>
 
-#### Results
-iron shovel (score = 0.7784)
-wooden axe (score = 0.7762)
+#### Results  
+iron shovel (score = 0.7784)  
+wooden axe (score = 0.7762)  
 
 
 ### Quantitative Evaluation
@@ -95,11 +95,11 @@ For our quantitative evaluation, we used classification rate, which gives us an 
 
 Softmax is used in the final layer of a neural net classifier to compute confidence levels, leading to the classification of the object in the images above as 'iron shovel' since the confidence returned in each run is above 0.60. All four of the images did activate the correct output class, but some also activated other output class neurons with even higher confidence levels. 
 
-Shovel: 0.33
-Bow: 1.0
-Wooden Axe: 1.0
-Wheat: 0.5
-Overall Classifier: 0.57
+Shovel: 0.33  
+Bow: 1.0  
+Wooden Axe: 1.0  
+Wheat: 0.5  
+Overall Classifier: 0.57  
 
 This was on images that were highly varied and had quite a bit of noise in them.  To deal with such noise we plan to optimize our in game screenshots: implement a co-existing object identifier algorithm along with our classification algorithm.  Together, these algorithms create true vision.  Furthermore, we plan to increase our data set once again with more items each with 200 pictures.  Images will mainly be varied by occluding objects. We hope to achieve better accuracy this way and bump our accuracy back up to 75%.
 
@@ -115,12 +115,12 @@ Further information and visualization of the softmax equation used in TensorFlow
 ### Qualitative Evaluation
 For our qualitative evaluation, we wanted to make sure that similar items could be differentiated from each other.  Therefore we chose to train our subset of items as: (similar items are adjacent to each other)
 
-golden_axe	wooden_axe
-iron_shovel	stone_hoe	
-wheat (Commonly appears bc classifier is confusing it with grass)
-leather_boots bowl 
-bow
-diamond_sword	
+golden_axe	wooden_axe  
+iron_shovel	stone_hoe	 
+wheat (Commonly appears bc classifier is confusing it with grass)  
+leather_boots bowl  
+bow  
+diamond_sword	 
 
 As seen in the images above, we were able to avoid some situations in which items could be confused: a stone hue and an iron shovel.  Other than this we were able to test our AI in various environments.  No matter snow, rain or clear weather, our AI was accurately able to recognize the items.  Occluding objects in the environment such as boxes, grass, trees and flowers do negatively affect our algorithm, depending on how much of the object is hidden.  If at least 60% of the object is visible our AI can guess the object within its top three choices. These variations helped us qualitatively evaluate our project. For future iterations, we would like to add more angles, as we only tested on straight point-of-view angles in the above images.
 
