@@ -61,7 +61,7 @@ python retrain.py \
   --image_dir=minecraft_photos
 ```
 
-The script will proceed to generate bottleneck files, as mentioned above, and begin the training of the final layer. To do so, the trainer runs repeated steps. During each iteration, it randomly chooses 10 images from the training set and retrieves the respective bottlenecks to form a prediction on the final layer. The results will be compared against the true labels of the images. The differences used to update the weight values of the final layer using stochastic gradient descent. Note that we limited the amount of training steps to 500 while a general image classification training on this model will usually run 4000 steps. This is due to the limited size of our training set compared to the amount of images used during normal practices. The recommended number of images for a relatively accurate classifier is 100+. Our collection of 50 images per item meets the moderate requirement for training an admissible A.I. Since increasing training steps will only be beneficial given sufficient amount of training data, we needn't perform the default of 4000 training steps.
+The script will proceed to generate bottleneck files, as mentioned above, and begin the training of the final layer. To do so, the trainer runs repeated steps. During each iteration, it randomly chooses 10 images from the training set and retrieves the respective bottlenecks to form a prediction on the final layer. The results will be compared against the true labels of the images. The differences used to update the weight values of the final layer using stochastic gradient descent. Note that we limited the amount of training steps to 500 while a general image classification training on this model will usually run 4000 steps. This is due to the limited size of our training set compared to the amount of images used during normal practices. The recommended number of images for a relatively accurate classifier is 100+. Our collection of 40 images per item meets the moderate requirement for training an admissible A.I. Since increasing training steps will only be beneficial given sufficient amount of training data, we needn't perform the default of 4000 training steps.
 
 ## Evaluation
 
@@ -101,7 +101,7 @@ Wooden Axe: 1.0
 Wheat: 0.5  
 Overall Classifier: 0.57  
 
-This was on images that were highly varied and had quite a bit of noise in them.  To deal with such noise we plan to optimize our in game screenshots: implement a co-existing object identifier algorithm along with our classification algorithm.  Together, these algorithms create true vision.  Furthermore, we plan to increase our data set once again with more items each with 200 pictures.  Images will mainly be varied by occluding objects. We hope to achieve better accuracy this way and bump our accuracy back up to 75%.
+This was on images that were highly varied and had quite a bit of noise in them.  To deal with such noise we plan to optimize our in game screenshots: implement a co-existing object identifier algorithm along with our classification algorithm.  Together, these algorithms create true vision.  Furthermore, we plan to increase our data set once again with more items each with 200 pictures.  Images will mainly be varied by occluding objects. We hope to achieve better accuracy this way and bump our accuracy up to 75%.
 
 Further information and visualization of the softmax equation used in TensorFlow
 (taken from [TensorFlow Documentation](https://www.tensorflow.org/get_started/mnist/beginners#softmax_regressions)):
@@ -113,7 +113,7 @@ Further information and visualization of the softmax equation used in TensorFlow
 <img src="https://raw.githubusercontent.com/chrismgala/Classyfy/master/data/evaluation/equation3.png" width="600" height="300"/>
 
 ### Qualitative Evaluation
-For our qualitative evaluation, we wanted to make sure that similar items could be differentiated from each other.  Therefore we chose to train our subset of items as: (similar items are adjacent to each other)
+For our qualitative evaluation, we wanted to make sure that similar items could be differentiated from each other.  Therefore, we chose to train our subset of items as: (similar items are adjacent to each other)
 
 golden_axe	wooden_axe  
 iron_shovel	stone_hoe	 
