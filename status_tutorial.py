@@ -26,7 +26,7 @@ import time
 from subprocess import call
 from tf_files import label_image as lI
 from PIL import Image
-
+import pyscreenshot as ImageGrab
 
 
 
@@ -85,13 +85,13 @@ def GetMissionXML(items, world):
                       <FlatWorldGenerator generatorString="''' + world + '''"/>
                       <DrawingDecorator>
                         <DrawSphere x="-27" y="70" z="0" radius="30" type="air"/>''' + Menger(-40, 40, -13, 27, "wool", "air") + '''
-                        ''' + getItemDrawing('coal', 5, 3) + '''
-                        ''' + getItemDrawing('apple', 5, 24) + '''
-                        ''' + getItemDrawing('apple', 3, 44) + '''
-                        ''' + getItemDrawing('coal', 7, 68) + '''
-                        ''' + getItemDrawing('coal', 5, 88) + '''
-                        ''' + getItemDrawing('apple', 5, 108) + '''
-                        ''' + getItemDrawing('apple', 8, 120) + '''
+                        ''' + getItemDrawing('iron_shovel', 5, 2) + '''
+                        ''' + getItemDrawing('wooden_axe', 5, 23) + '''
+                        ''' + getItemDrawing('stone_hoe', 5, 44) + '''
+                        ''' + getItemDrawing('stone_hoe', 6, 44) + '''
+                        ''' + getItemDrawing('bow', 5, 66) + '''
+                        ''' + getItemDrawing('wheat', 6, 88) + '''
+                        ''' + getItemDrawing('wheat', 5, 88) + '''
                       </DrawingDecorator>
                       <ServerQuitFromTimeUp timeLimitMs="100000"/>
                       <ServerQuitWhenAnyAgentFinishes/>
@@ -127,30 +127,13 @@ if agent_host.receivedArgument("help"):
 
 
 worlds = [
+    '3;7,2*3,2;16;stronghold(distance=3),biome_1(distance=11),village(distance=9),decoration',
     '3;7,2*3,2;1;village,decoration',
-    '3;7,2*3,2;7;village,decoration',
-    '3;7,2*3,2;6;village,decoration',
-    '3;7,2*3,2;32;village,decoration',
-    '3;7,2*3,2;33;village,decoration',
-    '3;7,2*3,2;31;village,decoration',
-    '3;7,2*3,2;32;village,decoration',
-    '3;7,2*3,2;39;village,decoration',
-    '3;7,2*3,2;140;village,decoration',
-    '3;7,2*3,2;34;village,decoration',
-    '3;7,2*3,2;11;biome_1(distance=11),village(distance=9),decoration',
-    '3;7,2*3,2;13;biome_1(distance=11),village(distance=9),decoration',
-    '3;7,2*3,2;131;biome_1(distance=11),village(distance=9),decoration',
-    '3;7,2*3,2;167;biome_1(distance=11),village(distance=9),decoration',
-    '3;7,2*3,2;5;stronghold(distance=3),biome_1(distance=9),village(distance=9),decoration,dungeon,mineshaft(chance=0.9)',
-    '3;7,2*3,2;39;village,decoration',
-    '3;7,2*3,2;140;stronghold(distance=3),biome_1(distance=9),village(distance=9),decoration,dungeon,mineshaft(chance=0.9)',
-    '3;7,2*3,2;5;stronghold(distance=3),biome_1(distance=9),village(distance=9),decoration,dungeon,mineshaft(chance=0.9)',
-    '3;7,2*3,2;0;stronghold(distance=3),biome_1(distance=11),village(distance=9),decoration',
-    '3;7,2*3,2;16;stronghold(distance=3),biome_1(distance=11),village(distance=9),decoration'
+    '3;7,2*3,2;7;village'
 ]
 
 # Attempt to start a mission:
-for i in range(1, 20):
+for i in range(0, 1):
     items[i] = items[i].strip()
 
     missionXML = GetMissionXML(['coal','apple'], worlds[i])
@@ -192,11 +175,11 @@ for i in range(1, 20):
         world_state = agent_host.getWorldState()
         agent_host.sendCommand("move 0.0")
         #Getting a screenshot.
-        call(["screencapture", "current_state" + ".png"])
+        im = ImageGrab.grab(bbox=(200,200,800,500))
+        ImageGrab.grab_to_file('current_state.png')
         im = Image.open("current_state.png")
         rgb_im = im.convert('RGB')
         rgb_im.save('current_state.jpg')
-
         # Getting the item classification.
         top_k, label_lines, predictions = lI.classify()
         for node_id in top_k:

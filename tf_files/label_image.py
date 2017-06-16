@@ -38,7 +38,7 @@ def classify():
 
         for node_id in top_k:
             human_string = label_lines[node_id]
-            score = predictions[0][node_id]
+            score = predictions[0][node_id]*=4
     return (top_k, label_lines, predictions)
 
 
