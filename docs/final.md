@@ -1,6 +1,6 @@
 ---
-layout: default  
-title:  Final Report  
+layout: default
+title:  Final Report
 ---
 
 ## Video
