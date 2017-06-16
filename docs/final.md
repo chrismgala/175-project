@@ -1,7 +1,5 @@
- ---
 layout: default  
 title:  Final Report  
----
 
 ## Video
 <a href="https://www.youtube.com/watch?v=oYg_o5zpFXQ&feature=youtu.be
