@@ -13,7 +13,7 @@ We started out with the goal of being able to implement Object Detection. This r
 
 After changing to Classification, we focused on being able to build classifiers using a small amount of data. We wanted to get things up and running with a stripped down version of our main goal which is to classify multiple objects on the screen at once as the Agent moves through a World. This was successful in that we were able to get our classifier to recognize a couple of built-in items in Minecraft. The classifier runs in the background of Project Malmo and outputs the names of objects detected on screen in the chatbox.
 
-Since then we have expanded to support classification of multiple objects on the screen with similar / slightly better accuracy. We increased our number of classes to more than five and can classify two to three items on the screen at the same time. We need ML / AI for
+Since then we have expanded to support classification of multiple objects on the screen with similar / slightly better accuracy. We increased our number of classes to more than five and can classify multiple items on the screen at the same time. We need ML / AI for
 this project because in order to recognize / classify these objects instantaneously, we need a classifier that is trained to continuously recognize them. It is non-trivial especially becausee of the variety of conditions and environments (e.g. clear vs. rain / snow) with differing layouts, backgrounds, and angles that the object could reside in.
 
 ## Approaches
