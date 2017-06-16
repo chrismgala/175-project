@@ -55,14 +55,14 @@ In real life this could be expanded to helping people understand what recipes th
 # Video Summary 
 Embedding wasn't possible so click on the image below to see the gameplay of our agent. 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=d5n6dN1qB6s
-" target="_blank"><img src="http://img.youtube.com/vi/d5n6dN1qB6s/0.jpg" 
+<a href="https://www.youtube.com/watch?v=oYg_o5zpFXQ&feature=youtu.be
+" target="_blank"><img src="http://img.youtube.com/vi/oYg_o5zpFXQ/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 
 # Future Improvements
-1. Better data collection with more items and enlarged training data set for each item.
-2. Adding object detection to the intelligent agent.
+1. Better data collection with even more items and enlarged training data set for each item.
+2. Adding object detection to the intelligent agent by improving screenshotting process.
 3. Hooking it up to recipe creation and inventory in minecraft. 
 
 
