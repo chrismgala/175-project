@@ -178,8 +178,8 @@ for i in range(0, 1):
         im = ImageGrab.grab(bbox=(200,200,800,500))
         ImageGrab.grab_to_file('current_state.png')
         im = Image.open("current_state.png")
-        rgb_im = im.convert('RGB')
-        rgb_im.save('current_state.jpg')
+        im = im.convert('L')
+        im.save('current_state.jpg')
         # Getting the item classification.
         top_k, label_lines, predictions = lI.classify()
         for node_id in top_k:
